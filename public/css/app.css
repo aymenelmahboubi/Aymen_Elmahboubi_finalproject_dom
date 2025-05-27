@@ -443,9 +443,9 @@ a{
   color: white;
 }
 .stats .stat-div span:last-child {
-  font-size: 30px;
-  font-weight: bold;
-  color: #888;
+  font-size: 25px;
+  
+  color:#c5c1bd;
 }
 
 
