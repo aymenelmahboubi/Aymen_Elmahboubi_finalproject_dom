@@ -1,9 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+
 /* nav */
 nav{
     display: flex;
     align-items: center;
      justify-content: space-around;
-    
+    padding: 25px;
 }
 
     
@@ -195,6 +202,8 @@ a{
 }
 
 
+/* section1 */
+
 .head-sec{
     display: flex;
     justify-content: center;
@@ -279,5 +288,106 @@ a{
 .title-about span {
     color: red;
     font-family: statit;
+}
+
+
+
+
+/* section3 */
+
+
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 5px;
+    padding-inline: 20px;
+    background-color: #f2f2f2;
+    padding-bottom: 25px;
+}
+
+.section3 .cards-sec3 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+   
+    
+}
+
+.section3 .cards-sec3 .card-sec3 {
+    background-color: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    width: 300px;
+    height: 40vh;
+    justify-content: center;
+}
+
+.section3 .cards-sec3 .card-sec3 h4 {
+    text-align: center;
+}
+
+.section3 .cards-sec3 .card-sec3 p {
+    text-align: center;
+    color: grey;
+}
+
+.section3 .cards-sec3 .card-sec3 .icon {
+    background-color: #ce121220;
+    font-size: 2.5vw;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: #ce1212;
+}
+
+.section3 .cards-sec3 .card-sec3 .icon:hover {
+    background-color: #ce1212;
+    color: white;
+}
+
+.cards-sec3 .card-sec4 {
+    background-color: red;
+    padding: 25px;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+
+.cards-sec3 .card-sec4 h5 {
+    color: white;
+    font-size: 30px;
+}
+
+.cards-sec3 .card-sec4 p {
+    color: white;
+    line-height: 25px;
+}
+
+.cards-sec3 .card-sec4 button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 22%;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 0px;
+    background-color: #ce1212;
+    font-weight: bold;
+}
+
+.cards-sec3 .card-sec4 button:hover {
+    background-color: white;
+    color: #ce1212;
+    cursor: pointer;
 }
 
