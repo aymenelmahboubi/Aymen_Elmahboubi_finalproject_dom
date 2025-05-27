@@ -193,3 +193,91 @@ a{
     padding: 7px 0px;
     border-radius: 20px;
 }
+
+
+.head-sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+.head-sec p{
+    font-family: Ink Free;
+}
+.head-sec h1{
+    font-family: Ink Free;
+  font-size: xx-large;
+}
+.head-sec span{
+    color: #ce1212;
+}
+
+.sec-about {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.info-about {
+    border: 3px solid grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 6px;
+}
+.info-about p{
+    font-size: xx-large;
+}
+.info-about>h1{
+    color: #ce1212;
+}
+
+.left-content-about {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    /* padding-inline-start: 10px; */
+}
+
+.right-about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icons-about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fa-solid{
+    color: #ce1212;
+}
+
+.right-about .text-secondary {
+    color: grey;
+}
+
+.imgbout {
+    width: 560px;
+}
+
+.title-about p {
+    color: grey;
+}
+
+.title-about h1 {
+    font-family: statit;
+}
+
+.title-about span {
+    color: red;
+    font-family: statit;
+}
+
