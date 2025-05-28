@@ -90,8 +90,21 @@ containers.forEach(container => {
         })
     })
 
-    indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator')
+    group.querySelector(".indicator").classList.add('activeIndicator')
 
     
 
+})
+
+// navbar-respo
+
+
+let menu=document.querySelector(".menu1")
+let nav=document.querySelector(".nav-links")
+let close=document.querySelector(".close1")
+menu.addEventListener("click",()=>{
+    nav.style.display="flex"
+})
+close.addEventListener("click",()=>{
+    nav.style.display="none"
 })
