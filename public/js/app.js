@@ -108,3 +108,65 @@ menu.addEventListener("click",()=>{
 close.addEventListener("click",()=>{
     nav.style.display="none"
 })
+
+
+
+
+// galerry
+
+let current = 2
+function showSlides() {
+
+  let images = document.querySelectorAll('.carouseel-img')
+  let dots = document.querySelectorAll('.dot')
+
+ 
+  for (let i = 0; i < images.length; i++) {
+   
+    images[i].classList.remove('active')
+
+    if (i >= current - 2 && i <= current + 2) {
+      images[i].style.display = 'inline'
+    } else {
+      images[i].style.display = 'none'
+    }
+ 
+    if (i === current) {
+      images[i].classList.add('active')
+    }
+  }
+
+
+  for (let i = 0; i < dots.length; i++) {
+   
+    if (i === current) {
+      dots[i].classList.add('active')
+    } else {
+      dots[i].classList.remove('active')
+    }
+  }
+}
+
+
+function moveSlide(n) {
+  let images = document.querySelectorAll('.carouseel-img')
+
+ 
+  current = current + n
+
+
+  if (current < 0) {
+    current = 0;
+  }
+  if (current >= images.length) {
+    current = images.length - 1
+  }
+
+  showSlides()
+}
+function goToSlide(n) {
+  current = n
+  showSlides()
+}
+
+showSlides()
